@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sports Club</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #2c3e50;
+            position: relative;
+        }
+
+        .contact-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .contact-header::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 4px;
+            background: #3498db;
+            border-radius: 2px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .position-title {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            color: #34495e;
+            font-size: 1.1rem;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            color: #3498db;
+        }
+
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #2980b9;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .contact-header h1 {
+                font-size: 2rem;
+            }
+
+            .contact-card {
+                padding: 20px;
+            }
+
+            .position-title {
+                font-size: 1.2rem;
+            }
+
+            .info-item {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="contact-header">
+            <h1>Contact Our Team</h1>
+            <p>Get in touch with our sports club leadership</p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Sports President Card -->
+            <div class="contact-card">
+                <h2 class="position-title">
+                    <span class="icon">📌</span>
+                    Sports President
+                </h2>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="icon">👤</span>
+                        <span>Priyanshu Verma</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <span>9368308670</span>
+                    </div>
+                    <div class="info-item">
+                       
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Operational Head Card -->
+            <div class="contact-card">
+                <h2 class="position-title">
+                    <span class="icon">📌</span>
+                    Operational Head Coordinator
+                </h2>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="icon">👤</span>
+                        <span>Sarthak Ghoderao</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <span>8237556659</span>
+                    </div>
+                    <div class="info-item">
+                       
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marketing Head Card -->
+            <div class="contact-card">
+                <h2 class="position-title">
+                    <span class="icon">📌</span>
+                    Marketing Head Coordinator
+                </h2>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="icon">👤</span>
+                        <span>Farzain Naikwade</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <span>9175111060</span>
+                    </div>
+                    <div class="info-item">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
