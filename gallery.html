@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Club - Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Sports Club</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#sports">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#facilities">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="gallery py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h1>Our Gallery</h1>
+            </div>
+            
+            <!-- Gallery Filter -->
+            <div class="gallery-filter text-center mb-4">
+                <button class="btn btn-outline-primary active" data-filter="all">All</button>
+                <button class="btn btn-outline-primary" data-filter="sports">Sports</button>
+                <button class="btn btn-outline-primary" data-filter="facilities">Facilities</button>
+                <button class="btn btn-outline-primary" data-filter="events">Events</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="row g-4">
+                    <!-- Sports Images -->
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="sports">
+                        <div class="gallery-card">
+                            <img src="images/badmintion.jpg" class="img-fluid" alt="Badminton">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>Badminton</h3>
+                                    <p>Professional badminton court and training facilities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="sports">
+                        <div class="gallery-card">
+                            <img src="images/TT.jpg" class="img-fluid" alt="Table Tennis">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>Table Tennis</h3>
+                                    <p>State-of-the-art table tennis facilities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="sports">
+                        <div class="gallery-card">
+                            <img src="images/img1.jpg" class="img-fluid" alt="Sports Training">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>Sports Training</h3>
+                                    <p>Professional coaching and training sessions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facilities Images -->
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="facilities">
+                        <div class="gallery-card">
+                            <img src="images/turf.jpg" class="img-fluid" alt="Turf Facility">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>Turf Facility</h3>
+                                    <p>Premium quality artificial turf for various sports</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="facilities">
+                        <div class="gallery-card">
+                            <img src="images/turf2.jpg" class="img-fluid" alt="Sports Field">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>Sports Field</h3>
+                                    <p>Professional-grade playing field for multiple sports</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="facilities">
+                        <div class="gallery-card">
+                            <img src="images/tools.jpg" class="img-fluid" alt="Equipment">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>Sports Equipment</h3>
+                                    <p>High-quality sports equipment and gear</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Events Images -->
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="events">
+                        <div class="gallery-card">
+                            <img src="images/img2.jpg" class="img-fluid" alt="Sports Event">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>Sports Event</h3>
+                                    <p>Exciting sports competitions and tournaments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="events">
+                        <div class="gallery-card">
+                            <img src="images/img3.jpg" class="img-fluid" alt="Championship">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>Championship</h3>
+                                    <p>Annual sports championship highlights</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="events">
+                        <div class="gallery-card">
+                            <img src="images/img4.jpg" class="img-fluid" alt="Community Event">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>Community Event</h3>
+                                    <p>Bringing people together through sports</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Images -->
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="sports">
+                        <div class="gallery-card">
+                            <img src="images/img5.jpg" class="img-fluid" alt="Sports Training">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>Training Session</h3>
+                                    <p>Professional sports training and coaching</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="facilities">
+                        <div class="gallery-card">
+                            <img src="images/img6.jpg" class="img-fluid" alt="Sports Facility">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>Sports Complex</h3>
+                                    <p>Modern sports complex with multiple facilities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="events">
+                        <div class="gallery-card">
+                            <img src="images/img7.jpg" class="img-fluid" alt="Sports Event">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h3>Sports Day</h3>
+                                    <p>Annual sports day celebrations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="gallery.js"></script>
+</body>
+</html> 
