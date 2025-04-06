@@ -4,270 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NST-Sports Club</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/IMG-20241117-WA0006.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/IMG-20241117-WA0006.jpg" type="image/x-icon">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <span class="brand-text">NST-Sports Club</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sports">Sports</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#facilities">Facilities</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<section class="header">
+    <nav>
+        <a><p style="color: antiquewhite; font-weight: bolder;">NST-Sports Club</p>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#sports">Sports</a></li>
+                    <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-        </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </a>
     </nav>
+<div class="text-box">
+    <h1>Welcome to NST-Sports Club</h1>
+    <p>Welcome to NST Sports Club – where passion meets performance! Join us for top-tier training, exciting events, 
+    and a community that fuels your love for sports.
+    </p>
+    <a href="https://www.newtonschool.co/newton-school-of-technology-nst/nst-adypu-pune" class="hero-btn">Visit Our College</a>
+</div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="row min-vh-100 align-items-center">
-                <div class="col-lg-8 text-center text-lg-start">
-                    <h1 class="display-2 fw-bold mb-4">Welcome to NST-Sports Club</h1>
-                    <p class="lead mb-5">Where passion meets performance! Join us for top-tier training, exciting events, and a community that fuels your love for sports.</p>
-                    <a href="https://www.newtonschool.co/newton-school-of-technology-nst/nst-adypu-pune" class="btn btn-primary btn-lg">Visit Our College</a>
-                </div>
+</section>
+
+<!-- -----About----- -->
+<section class="about" id="about">
+    <h1>About Our Sports Club</h1>
+    <p>Welcome to our sports club, where passion meets performance! We offer a variety of sports, including football, basketball, tennis, swimming, and more, providing a fun and inclusive environment for athletes of all skill levels. Our club is dedicated to promoting fitness, teamwork, and personal growth while fostering a strong sense of community. Whether you're looking to compete, stay active, or make new friends, we have the perfect sport for you. Join us today and be part of an exciting sports journey! 🏆⚽🏀🎾</p>
+
+    <div class="row">
+        <div class="about-col">
+            <img src="images/tools.jpg" alt="Football">
+            <div class="layer">
+                <h3><a href="imageshowcase.html" style="color: white; text-decoration: none;">Click Me</a></h3>
+
+
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- -----Sports----- -->
+<section class="sports" id="sports">
+    <h1 class="heading">Our Sports</h1>
+    <p>Join our sports club and explore a wide range of exciting sports, meet new teammates, stay active, and enjoy the thrill of friendly competition in a fun and welcoming environment! 🏆⚽🏀🎾</p>
 
-    <!-- About Section -->
-    <section class="about py-5" id="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="about-image position-relative">
-                        <a href="gallery.html">
-                        <img src="images/tools.jpg" alt="About Us" class="img-fluid rounded-3"></a>
-                        <div class="image-overlay">
-                            <h3 class="text-white">Gallery</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="section-title mb-4">About Our Sports Club</h2>
-                    <p class="lead mb-4">Welcome to our sports club, where passion meets performance! We offer a variety of sports, including football, basketball, tennis, swimming, and more, providing a fun and inclusive environment for athletes of all skill levels.</p>
-                    <p>Our club is dedicated to promoting fitness, teamwork, and personal growth while fostering a strong sense of community. Whether you're looking to compete, stay active, or make new friends, we have the perfect sport for you.</p>
-                </div>
+    <div class="row">
+            
+               
+            
+            <div class="sport-card">
+                <img src="images/basket copy.jpeg" alt="basketball" style="height: 200px;">
+                <h3>Basketball</h3>
+                <p>Become a part of our Basketball Club and elevate your game while building teamwork, leadership, and fitness. Enjoy a dynamic and supportive community where passion meets play!</p>
+                <a href="contactus.html" class="sport-btn">Contact Us</a>
             </div>
-        </div>
-    </section>
+            <div class="sport-card">
+                <img src="images/football copy.jpeg" alt="Football" style="height: 200px;">
+                <h3>Football</h3>
+                <p>Joining our football club boosts fitness, teamwork, and leadership skills while providing a fun and supportive environment. Stay active, build friendships, and enjoy the thrill of the game!</p>
 
-    <!-- Sports Section -->
-    <section class="sports py-5" id="sports">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Our Sports</h2>
-                <p class="lead">Join our sports club and explore a wide range of exciting sports, meet new teammates, stay active, and enjoy the thrill of friendly competition!</p>
+                <a href="contactus.html" class="sport-btn">Contact Us</a>
             </div>
 
-            <div id="sportsCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#sportsCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#sportsCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#sportsCarousel" data-bs-slide-to="2"></button>
-                    <button type="button" data-bs-target="#sportsCarousel" data-bs-slide-to="3"></button>
-                </div>
+            <div class="sport-card">
+                <img src="images/chess copy.jpeg" alt="chess" style="height: 200px;">
+                <h3>Chess</h3>
+                <p>Join our Chess Club to sharpen your strategic thinking, enhance problem-solving skills, and cultivate patience in an engaging and friendly environment. Challenge your mind, connect with like-minded players, and enjoy the thrill of every move!</p>
+                <a href="contactus.html" class="sport-btn">Contact Us</a>
                 
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="sport-card">
-                            <div class="sport-image">
-                                <img src="images/turf.jpg" alt="Football">
-                                <div class="sport-overlay">
-                                    Football
-                                </div>
-                            </div>
-                            <div class="sport-content">
-                                <p>Joining our football club boosts fitness, teamwork, and leadership skills while providing a fun and supportive environment.</p>
-                                <a href="#" class="btn btn-outline-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="sport-card">
-                            <div class="sport-image">
-                                <img src="images/turf.jpg" alt="Basketball">
-                                <div class="sport-overlay">
-                                    Basketball
-                                </div>
-                            </div>
-                            <div class="sport-content">
-                                <p>Experience the excitement of basketball with our professional coaches. Improve your skills and be part of our competitive team!</p>
-                                <a href="#" class="btn btn-outline-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="sport-card">
-                            <div class="sport-image">
-                                <img src="images/turf.jpg" alt="Tennis">
-                                <div class="sport-overlay">
-                                    Tennis
-                                </div>
-                            </div>
-                            <div class="sport-content">
-                                <p>Join our tennis program and master the art of the game. Perfect for all skill levels, from beginners to advanced players!</p>
-                                <a href="#" class="btn btn-outline-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="sport-card">
-                            <div class="sport-image">
-                                <img src="images/turf.jpg" alt="Chess">
-                                <div class="sport-overlay">
-                                    Chess
-                                </div>
-                            </div>
-                            <div class="sport-content">
-                                <p>Enhance your strategic thinking with our chess club. Join tournaments, learn new strategies, and challenge your mind!</p>
-                                <a href="#" class="btn btn-outline-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <button class="carousel-control-prev" type="button" data-bs-target="#sportsCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#sportsCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+
             </div>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Facilities Section -->
-    <section class="facilities py-5" id="facilities">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Our Facilities</h2>
-                <p class="lead">Discover our state-of-the-art facilities designed to enhance your sports experience</p>
-            </div>
+<br><br><br>
 
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="facility-card">
-                        <img src="images/turf2.jpg" alt="Turf" class="img-fluid">
-                        <div class="facility-content">
-                            <h3>Premium Turf</h3>
-                            <p>Top-notch turfs for football and cricket, perfect for all skill levels. Experience the thrill of the game on our premium fields.</p>
-                        </div>
-                    </div>
-                </div>
+<!-- Facilities -->
+<section class="facilities" id="facilities">
+    <h1>Our Facilities</h1>
+    <p>Our sports club offers top-notch facilities, including premium turfs for football and cricket, a modern gym, equipped locker rooms, spacious lounges, badminton courts, basketball courts, chess areas, and table tennis space. Join our vibrant community and enhance your fitness journey—plus, we offer much more! ⚽🏋️‍♀️🏏🏸🏀♟️🏓</p>
 
-                <div class="col-md-4">
-                    <div class="facility-card">
-                        <img src="images/badmintion.jpg" alt="Court" class="img-fluid">
-                        <div class="facility-content">
-                            <h3>Badminton & Basketball</h3>
-                            <p>Professional courts for badminton and basketball. Perfect for both casual play and competitive matches.</p>
-                        </div>
-                    </div>
-                </div>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/turf2.jpg" alt="turf">
+            <h3>Turf</h3>
+            <p>Welcome to our sports club! We offer top-notch turfs for football and cricket, perfect for all skill levels. Join us and enjoy the thrill of the game on our premium fields. Be a part of our vibrant sports community! ⚽🏏.</p>
+    </div>
 
-                <div class="col-md-4">
-                    <div class="facility-card">
-                        <img src="images/TT.jpg" alt="Table Tennis" class="img-fluid">
-                        <div class="facility-content">
-                            <h3>Table Tennis</h3>
-                            <p>Dedicated space for table tennis enthusiasts. Improve your skills and enjoy competitive matches.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="facilities-col">
+        <img src="images/badmintion.jpg" alt="court">
+        <h3>Badminton and Basketball Court</h3>
+        <p>Our sports club offers badminton and basketball courts for players of all levels. Join us for a fun and competitive game, stay active, and make new friends. Be part of our vibrant sports community! 🏸🏀.</p>
+    </div>
 
-    <!-- Contact Section -->
-    <section class="contact py-5" id="contact">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Contact Us</h2>
-                <p class="lead">Get in touch with us for any inquiries or to join our sports community</p>
-            </div>
+    <div class="facilities-col">
+        <img src="images/TT.jpg" alt="TT">
+        <h3>Table Tennis</h3>
+        <p>Our sports club offers a dedicated space for table tennis enthusiasts. Join us for a friendly game, improve your skills, and enjoy the thrill of competition. Be part of our vibrant sports community! 🏓.</p>
+    </div>
 
-            <div class="row g-4">
-                <div class="col-lg-5">
-                    <div class="contact-info">
-                        <h3 class="mb-4">Get in Touch</h3>
-                        <div class="contact-details">
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="fas fa-map-marker-alt me-3"></i>
-                                <p class="mb-0">NST Campus, Pune</p>
-                            </div>
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="fas fa-phone me-3"></i>
-                                <p class="mb-0">+91 1234567890</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-envelope me-3"></i>
-                                <p class="mb-0">sports@nst.edu</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+</section>
 
-                <div class="col-lg-7">
-                    <form class="contact-form">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Name" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="Your Email" required>
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">&copy; 2024 NST-Sports Club. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <div class="social-links">
-                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+<!-- Contact -->
+<section class="cta" id="contact">
+    <h1>Feel Free To Reach Out To Us At <br>Any Time For Any Querries</h1>
+    <a href="tact.html" class="hero-btn">CONTACT US</a>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+     
 </body>
 </html>
